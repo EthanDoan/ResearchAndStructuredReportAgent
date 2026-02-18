@@ -44,3 +44,25 @@ If a real key was ever committed, do all of the following:
 2. Remove it from files and commit.
 3. Rewrite git history to purge it (for example with `git filter-repo` or BFG).
 4. Force-push cleaned history and ask collaborators to re-clone.
+
+## Sample usage
+
+Run the agent from the repository root:
+
+```bash
+python research_agent/main.py
+```
+
+When prompted, paste a request like this:
+
+```text
+Create a structured report on electric vehicle battery recycling in the EU. Include:
+- Current regulations and compliance requirements.
+- Top 5 recycling technologies and their trade-offs.
+- Key companies and recent funding trends (last 3 years).
+- Risks, open challenges, and recommendations for a startup entering this market.
+
+Use clear section headings and finish with a concise executive summary.
+```
+
+The generated report content is saved under `research_agent/outputs/`.
