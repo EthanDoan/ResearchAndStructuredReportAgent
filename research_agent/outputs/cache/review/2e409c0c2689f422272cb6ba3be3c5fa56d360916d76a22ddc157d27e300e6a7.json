@@ -1,0 +1,45 @@
+{
+  "cache_key": "review::Agentic AI architecture for mobile apps::sources=8::len=10572",
+  "value": {
+    "pass": false,
+    "issues": [
+      "Declared source count is 8 but only 4 references are listed; mismatch and incomplete bibliography.",
+      "References are placeholders without bibliographic details (authors, titles, dates, links) and mainly support report structure rather than technical claims.",
+      "Many technical assertions (privacy redaction efficacy, hybrid inference decisioning, on‑device vector search feasibility, thermal/energy constraints) lack citations or empirical evidence despite the presence of a references section.",
+      "No explicit threat model or trust boundaries; missing treatment of prompt injection, jailbreaks, tool‑output sanitization, and compromised tool scenarios.",
+      "On‑device model strategy is underspecified: no candidate models, parameter counts, quantization schemes, memory/CPU/NPU targets, latency/accuracy trade‑offs, or provider comparison criteria.",
+      "Rollback semantics are vague for irreversible actions (e.g., messages sent); no idempotency, compensating actions, outbox/transaction patterns, or side‑effect scoping.",
+      "Security gaps: key management and secret storage (Keychain/Secure Enclave/Android Keystore), token refresh, encryption at rest/in transit, and code/package integrity are not specified.",
+      "Mobile OS constraints are not concretely addressed: iOS/Android background execution limits, task resumption, termination handling, thermal throttling policies, and scheduling/backoff strategies.",
+      "Tooling safety is high level; lacks concrete sandboxing/isolation model, permission scoping enforcement mechanics, and least‑privilege credential handling per tool.",
+      "Interface and schema evolution concerns are missing: versioning, backward compatibility, and cross‑platform serialization (Swift/Kotlin/Protobuf/JSON) details.",
+      "Observability may be insufficient for debugging if only tool names are logged; no plan for privacy‑preserving payload traces (e.g., redacted/hashing strategies) or tamper‑evident audit logs.",
+      "Data governance/compliance not covered: data retention/TTL, user data export/deletion (GDPR/CCPA/DSAR), consent management, and privacy manifests (iOS/Android).",
+      "Evaluation lacks concrete targets and baselines: no specific SLIs/SLOs (latency budgets, tool‑call caps per scenario, success rates), datasets, or benchmarking methodology.",
+      "Performance/cost sections lack quantified budgets (tokens/sec, cold/warm start times, memory/flash footprint, power draw) and workload modeling.",
+      "Safety filtering and content moderation approaches (toxicity/PII/NSFW) are not defined, nor are their on‑device feasibility and accuracy/latency trade‑offs.",
+      "No comparison to existing agent frameworks/tooling relevant to mobile (e.g., ReAct/Toolformer patterns, mobile agent SDKs); alternatives analysis is shallow.",
+      "State sync and multi‑device considerations (conflict resolution, merge/diff of context/memory) are not discussed.",
+      "No diagrams or trust‑boundary visuals to ground the architecture and data flows."
+    ],
+    "new_queries": [
+      "iOS background execution and thermal throttling guidelines (BackgroundTasks, app life cycle) site:developer.apple.com",
+      "Android 14/15 background execution limits, WorkManager, foreground services, thermal throttling site:developer.android.com",
+      "On-device LLM benchmarks on A17 Pro and Snapdragon 8 Gen 3: tokens/sec, memory footprint, quantization (INT4/INT8, AWQ/GPTQ) comparative studies",
+      "On-device vector search on mobile (FAISS alternatives, SQLite+vec extensions, Milvus Lite) performance and storage footprint",
+      "Prompt injection and tool-use security best practices for agents (academic papers and industry guidance, 2023–2025)",
+      "Structured tool-calling reliability comparisons across LLM providers (function calling / JSON mode adherence, error rates)",
+      "PII redaction on-device: NER vs rule-based accuracy/latency trade-offs and privacy guarantees",
+      "Mobile key management: iOS Keychain/Secure Enclave and Android Keystore best practices for OAuth tokens and API keys",
+      "GDPR/CCPA compliance for mobile telemetry: consent, data retention, DSAR handling; Apple Privacy Manifest and Android Data safety form",
+      "Compensating transactions and undo patterns for mobile side-effects (outbox pattern, idempotency keys, dry-run/preview flows)",
+      "Energy modeling and measurement for on-device ML inference (Instruments Energy Log, Android Battery Historian) and mitigation techniques",
+      "Sandboxing and permission scoping for in-app tools (process isolation, IPC, least-privilege credential scoping)",
+      "Schema versioning strategies for tool interfaces and cross-platform serialization (Protobuf vs JSON with JSON Schema) on mobile",
+      "Privacy-preserving observability: redaction pipelines, deterministic hashing, and tamper-evident audit logging on device",
+      "Safety filtering pipelines on-device (toxicity/PII/NSFW) model options, latency, and effectiveness trade-offs",
+      "State persistence and resumable agent execution under app termination (checkpointing, journaling) on iOS/Android",
+      "Hybrid inference decisioning policies: when to elevate to cloud (risk/latency/cost models) with empirical thresholds"
+    ]
+  }
+}

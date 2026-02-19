@@ -1,0 +1,103 @@
+{
+  "cache_key": "serper::On-device LLM benchmarks on A17 Pro and Snapdragon 8 Gen 3: tokens/sec, memory footprint, quantization (INT4/INT8, AWQ/GPTQ) comparative studies::num=10",
+  "value": {
+    "searchParameters": {
+      "q": "On-device LLM benchmarks on A17 Pro and Snapdragon 8 Gen 3: tokens/sec, memory footprint, quantization (INT4/INT8, AWQ/GPTQ) comparative studies",
+      "type": "search",
+      "num": 10,
+      "engine": "google"
+    },
+    "organic": [
+      {
+        "title": "Deploying LLM Transformer on Edge Computing Devices - MDPI",
+        "link": "https://www.mdpi.com/2673-2688/7/1/15",
+        "snippet": "Qualcomm AI Hub: On-Device LLM Benchmarks for Snapdragon 8 Gen 3. 2023 ... Efficiency: Optimized for INT4/INT8 quantization, reaching 15–20 TPS on 7B models.",
+        "position": 1
+      },
+      {
+        "title": "How Fast Are On-Device LLMs on iPhone 17 Pro and iPad Pro?",
+        "link": "https://www.reddit.com/r/apple/comments/1r045h6/how_fast_are_ondevice_llms_on_iphone_17_pro_and/",
+        "snippet": "Memory bandwidth is everything when running LLMs locally, and the M series chips (especially higher tier ones) have that in spades.",
+        "date": "Feb 9, 2026",
+        "attributes": {
+          "Missing": "A17 Snapdragon Gen (INT4/ INT8, AWQ/ GPTQ) comparative studies"
+        },
+        "position": 2
+      },
+      {
+        "title": "Large Language Model Performance Benchmarking on Mobile ...",
+        "link": "https://arxiv.org/html/2410.03613v1",
+        "snippet": "We conduct a comprehensive measurement study on mobile devices. We evaluate both metrics that affect user experience, including token throughput, latency, and ...",
+        "date": "Oct 4, 2024",
+        "attributes": {
+          "Missing": "A17 (INT4/"
+        },
+        "position": 3
+      },
+      {
+        "title": "On-Device LLMs: State of the Union, 2026 - Vikas Chandra",
+        "link": "https://v-chandra.github.io/on-device-llms/",
+        "snippet": "Mobile devices have 50-90 GB/s; data center GPUs have 2-3 TB/s. That's a 30-50x gap. For LLM inference, this gap is decisive because decode is ...",
+        "date": "Jan 24, 2026",
+        "attributes": {
+          "Missing": "A17 (INT4/ INT8, comparative"
+        },
+        "position": 4
+      },
+      {
+        "title": "4-Bit, 8-Bit, GPTQ, AWQ: Quantization Explained With Real ...",
+        "link": "https://medium.com/write-a-catalyst/4-bit-8-bit-gptq-awq-quantization-explained-with-real-benchmarks-45f995a4caac",
+        "snippet": "We'll compare the real contenders : INT8, GPTQ, AWQ, and GGUF across three dimensions that actually matter: VRAM usage; Tokens per second ...",
+        "date": "Dec 25, 2025",
+        "attributes": {
+          "Missing": "device A17 Snapdragon Gen (INT4/"
+        },
+        "position": 5
+      },
+      {
+        "title": "Snapdragon 8 Gen 3 vs A17 Pro: tests and benchmarks - NanoReview",
+        "link": "https://nanoreview.net/en/soc-compare/qualcomm-snapdragon-8-gen-3-vs-apple-a17-pro",
+        "snippet": "We put Qualcomm Snapdragon 8 Gen 3 against Apple A17 Pro to find out which SoC is better. See performance comparison in benchmarks and games.",
+        "attributes": {
+          "Missing": "LLM tokens/ quantization (INT4/ INT8, AWQ/ studies"
+        },
+        "position": 6
+      },
+      {
+        "title": "[PDF] Cognitive Edge Computing: A Comprehensive Survey on Optimizing ...",
+        "link": "https://www.authorea.com/users/1001094/articles/1361592/master/file/data/cognitive_ec_arxiv/cognitive_ec_arxiv.pdf",
+        "snippet": "This article surveys Cognitive Edge Computing as a practical and methodical pathway for deploying reasoning-capable Large Language Models (LLMs) ...",
+        "date": "Nov 7, 2025",
+        "position": 7
+      },
+      {
+        "title": "(PDF) Deploying LLM Transformer on Edge Computing Devices",
+        "link": "https://www.researchgate.net/publication/399552151_Deploying_LLM_Transformer_on_Edge_Computing_Devices_A_Survey_of_Strategies_Challenges_and_Future_Directions",
+        "snippet": "Recent advancements in compact LLMs have shown promise in enhancing their deployment on edge devices, enabling improved performance while ...",
+        "date": "Jan 29, 2026",
+        "position": 8
+      },
+      {
+        "title": "Quantization Benchmarks: FP16 vs INT8 vs GPTQ vs AWQ",
+        "link": "https://python.plainenglish.io/quantization-benchmarks-fp16-vs-int8-vs-gptq-vs-awq-which-one-matters-in-practice-ccb35157ea5b",
+        "snippet": "Quantization Benchmarks: FP16 vs INT8 vs GPTQ vs AWQ — Which One Matters in Practice? Or: How I Learned to Stop Worrying and Love Smaller ...",
+        "date": "Dec 28, 2025",
+        "attributes": {
+          "Missing": "device A17 Snapdragon Gen tokens/ sec, (INT4/ comparative"
+        },
+        "position": 9
+      },
+      {
+        "title": "Apple A17 Pro VS Snapdragon 8 Gen 3 - YouTube",
+        "link": "https://www.youtube.com/watch?v=MT5r29iQRqA",
+        "snippet": "So, the world's most detailed comparison is here. You won't find any video like this one today. I have compared the #snapdragon8gen3 and ...",
+        "date": "Feb 15, 2024",
+        "attributes": {
+          "Missing": "device LLM tokens/ sec, memory footprint, quantization (INT4/ INT8, AWQ/ GPTQ) studies"
+        },
+        "position": 10
+      }
+    ],
+    "credits": 1
+  }
+}

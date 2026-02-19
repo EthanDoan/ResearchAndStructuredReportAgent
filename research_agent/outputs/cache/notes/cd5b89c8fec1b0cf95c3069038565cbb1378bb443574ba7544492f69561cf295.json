@@ -1,0 +1,207 @@
+{
+  "cache_key": "notes::https://edubirdie.com/blog/how-to-write-a-report::gpt-5",
+  "value": {
+    "notes": [
+      {
+        "claim": "A report is a formal, structured document used to present information, findings, or research clearly and concisely, often with explanations and recommendations based on collected data.",
+        "support": "“A formal, structured document to present information, findings, or research clearly, concisely, and organized… with explanations and recommendations based on the data collected.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Typical report length generally ranges from 5 to 20 pages, depending on purpose and complexity.",
+        "support": "“It can vary in length and complexity depending on the purpose but generally ranges from 5 to 20 pages.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Report writing is used in academic, business, and professional settings; examples include lab or research papers (academics), sales or market analysis summaries (business), and engineering or financial documents recording technical details or performance metrics (professional).",
+        "support": "“These documents are used in academic, business and professional settings… In academics, a lab report or research paper… In business, sales or market analysis summaries… Engineering or financial documents record technical details or performance metrics in professional environments.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Reports primarily inform but can also persuade or recommend actions; their structure is designed to make complex information easier to understand quickly.",
+        "support": "“One of the main purposes… is to inform the reader, but it can also persuade or recommend a course of action… Their structure and content is designed to make complex information easier to understand so the reader can quickly grasp the topic, key points, and findings.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Common report types include academic, business and marketing, technical, research, progress, and annual reports.",
+        "support": "“Types of reports… 1. Academic reports. 2. Business and marketing reports. 3. Technical reports. 4. Research reports. 5. Progress reports. 6. Annual reports.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Academic reports follow a standard structure (e.g., title page, literature review, methodology, key findings), are analytical, and include a literature review that summarizes and critiques existing research.",
+        "support": "“They usually follow a standard structure with sections like title page, literature review, methodology, and key findings… The literature review… summarizes and critiques existing research related to the topic.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Business and marketing reports include detailed data from market research and typically feature an executive summary, key findings, and data-driven recommendations to support decision-making.",
+        "support": "“Marketing documents… analyze market trends, consumer behavior, and the success of marketing strategies… A typical marketing analysis includes an executive summary, key findings, and data-driven recommendations… The executive summary provides a concise overview, allowing decision-makers to quickly grasp the essential points.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Technical reports (common in engineering, IT, construction) require clear communication of complex information and structured sections such as title page, methodology, findings, and appendices with technical data; the methods section is important for understanding.",
+        "support": "“Technical papers… are often used in engineering, IT and construction… Writing technical reports… requires structured sections including title page , methodology, findings and appendices with technical data… The methods section is important as it outlines the approach and findings of the research to aid in the overall understanding of the document.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Research reports are comprehensive, often include an executive summary, and provide detailed analysis of the research process, essential findings, and conclusions.",
+        "support": "“These comprehensive documents present the results of detailed research… They often include an executive summary… followed by a detailed analysis of the research process, essential findings, and conclusions.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Progress reports update project status, challenges, and next steps; they are often periodic and typically do not require an executive summary, focusing instead on outcomes and milestones.",
+        "support": "“These texts provide updates on ongoing projects… periodic progress updates are mandatory… This writing does not require an executive summary but focuses on conveying information about the outcomes and progress milestones.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Annual reports summarize a company’s yearly performance for stakeholders and often include an executive summary highlighting financial and operational achievements, followed by sections on financial statements, market performance, and strategic goals.",
+        "support": "“These are summaries of a company’s performance over the past year… They often have an executive summary highlighting the company’s financial and operational achievements, followed by sections on financial statements, market performance and strategic goals.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Field work papers summarize experiences and observations from field work, organized around a central theme to enhance clarity and coherence.",
+        "support": "“Field work papers are particularly important as they summarize the experiences and observations gained during field work, often organized around a central theme to enhance clarity and coherence.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "A common report structure includes: Title page; Table of contents; Introduction; Methodology; Findings/Results; Analysis and discussion; Conclusions and recommendations; References; Appendices.",
+        "support": "“Report writing format and structure… Title page; Table of contents; Introduction; Methodology; Findings/Results; Analysis and discussion; Conclusions and recommendations; References; Appendices;”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Title page should include the title, author’s name, submission date, and any additional information such as the institution’s name.",
+        "support": "“The title page includes the title, the author’s name, the submission date, and any additional information, such as the institution’s name.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "For longer documents, include a table of contents with page numbers and use bullet points to list main sections for easier navigation.",
+        "support": "“For a longer document, a table of contents with page numbers helps readers navigate the text easily. Use bullet points to list the main sections.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "The introduction should explain the central theme, outline the purpose, provide background, and introduce technical terms or key ideas; identifying the main theme is crucial for crafting a strong thesis statement.",
+        "support": "“This section explains the document’s central theme, outlines its purpose, and provides background… Identifying the main theme is crucial as it serves as the foundation for crafting a strong thesis statement. It also introduces any technical terms or key ideas.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "The methodology section explains how data was collected to ensure transparency and should summarize completed tasks or projects to show their significance in the overall process.",
+        "support": "“In research texts, the methodology section explains how data was collected and ensures transparency. Summarizing completed tasks or projects in this section is important as it highlights the finalized activities and their significance in the overall reporting process.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Findings/Results should present data clearly—often with tables, charts, or graphs—and make main points easy to understand.",
+        "support": "“This section presents your data, often with tables, charts, or graphs. Make sure your main points are easy to understand.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Analysis and discussion should interpret the data, explain its significance, address main issues, and highlight patterns or relationships that support the main point.",
+        "support": "“You should interpret the data and explain its significance… Make sure you address the main issues… Highlight patterns, relationships, or issues that support your main point.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Conclusions and recommendations must summarize key findings and make actionable, clear, and concise recommendations that guide next steps.",
+        "support": "“Summarize the key findings and make actionable recommendations… Make sure these findings are clear and concise… This is where you guide readers to the next steps.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "References should use a standard referencing style and list sources cited (including direct quotes and research materials), following specific guidelines for accuracy and consistency.",
+        "support": "“Use a standard referencing style to list primary sources you’ve cited, including direct quotes and research materials. Refer to specific guidelines and reference materials to ensure accuracy and consistency in your citations.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Appendices should include extra supporting material such as detailed data or documents relevant to the project.",
+        "support": "“Add extra material like detailed data or documents supporting your project in an appendix if needed.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Essential report-writing steps include: determine the purpose, conduct research, create an outline, write the first draft, critically evaluate and summarize, then edit and finalize.",
+        "support": "“How to write an entire report: essential steps… 1. Determine the purpose. 2. Conduct your research. 3. Create an outline. 4. Write the first draft. 5. Critically evaluate and summarize. 6. Edit and finalize.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Executive summaries are typical in business/marketing, research, and annual reports, while progress reports do not require one.",
+        "support": "“A typical marketing analysis includes an executive summary… They often include an executive summary… They often have an executive summary… This writing does not require an executive summary.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Each report type may have a unique format, but maintaining a consistent, clear, and organized structure is essential to communicate effectively across contexts.",
+        "support": "“Each type has a unique format, but the structure is consistent… the clear and organized presentation of information is essential for effectively communicating your message.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      }
+    ]
+  }
+}

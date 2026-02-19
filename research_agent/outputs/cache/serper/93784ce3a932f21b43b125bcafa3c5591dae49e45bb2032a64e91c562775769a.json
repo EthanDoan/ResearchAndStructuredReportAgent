@@ -1,0 +1,54 @@
+{
+  "cache_key": "serper::Provide concrete cost model: candidate model backends (and on-device options), price per token/call, expected tokens per task, DAU/QPS assumptions, and monthly cost projections with sensitivity.::num=10",
+  "value": {
+    "searchParameters": {
+      "q": "Provide concrete cost model: candidate model backends (and on-device options), price per token/call, expected tokens per task, DAU/QPS assumptions, and monthly cost projections with sensitivity.",
+      "type": "search",
+      "num": 10,
+      "engine": "google"
+    },
+    "organic": [
+      {
+        "title": "AI FinOps: Turning Tokens into Outcomes | by Adnan Masood, PhD.",
+        "link": "https://medium.com/@adnanmasood/ai-finops-turning-tokens-into-outcomes-41e99a640ad2",
+        "snippet": "A plain‑English guide for executives on how to measure, manage, and improve the cost, usage, and business value of AI and LLM workloads ...",
+        "date": "Oct 13, 2025",
+        "attributes": {
+          "Missing": "backends device DAU/"
+        },
+        "position": 1
+      },
+      {
+        "title": "The Cost of Dynamic Reasoning: Demystifying AI Agents and Test ...",
+        "link": "https://arxiv.org/html/2506.04301v2",
+        "snippet": "This paper presents the first comprehensive system-level analysis of AI agents, quantifying their resource usage, latency behavior, energy ...",
+        "date": "Jan 7, 2026",
+        "attributes": {
+          "Missing": "options), price expected"
+        },
+        "sitelinks": [
+          {
+            "title": "Iii Methodology",
+            "link": "https://arxiv.org/html/2506.04301v2#:~:text=III%20Methodology,-Report%20issue%20for%20preceding%20element"
+          },
+          {
+            "title": "Iv Demystifying Ai Agents",
+            "link": "https://arxiv.org/html/2506.04301v2#:~:text=IV%20Demystifying%20AI%20Agents,-Report%20issue%20for%20preceding%20element"
+          },
+          {
+            "title": "Vi Ai Infrastructure...",
+            "link": "https://arxiv.org/html/2506.04301v2#:~:text=VI%20AI%20Infrastructure%20Implications,-Report%20issue%20for%20preceding%20element"
+          }
+        ],
+        "position": 2
+      },
+      {
+        "title": "[PDF] Ace the Data Science Interview",
+        "link": "http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202026%20-%20B/AI%20and%20DS/Ace%20the%20Data%20Science%20Interview.pdf",
+        "snippet": "Plugging this back into the equation for the expected value of X yields the following: , l 1. E|X|= p*—--=— pp. 72 Ace the Data Science Interview | Statistics ...",
+        "position": 3
+      }
+    ],
+    "credits": 1
+  }
+}

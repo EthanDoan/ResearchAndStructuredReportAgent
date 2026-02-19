@@ -1,0 +1,41 @@
+{
+  "cache_key": "notes::https://www.scribbr.com/academic-essay/essay-outline/::gpt-5",
+  "value": {
+    "notes": [
+      {
+        "claim": "Fetching the source URL failed with a 403 Forbidden client error.",
+        "support": "ERROR: HTTPError: 403 Client Error: Forbidden for url: https://www.scribbr.com/academic-essay/essay-outline/",
+        "tags": [
+          "api",
+          "security"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "The error raised was an HTTPError.",
+        "support": "ERROR: HTTPError: 403 Client Error: Forbidden for url: https://www.scribbr.com/academic-essay/essay-outline/",
+        "tags": [
+          "api"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "The attempted URL was https://www.scribbr.com/academic-essay/essay-outline/.",
+        "support": "...Forbidden for url: https://www.scribbr.com/academic-essay/essay-outline/",
+        "tags": [
+          "api"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "The 403 Forbidden error prevented retrieval of the page content.",
+        "support": "ERROR: HTTPError: 403 Client Error: Forbidden for url: https://www.scribbr.com/academic-essay/essay-outline/",
+        "tags": [
+          "api",
+          "other"
+        ],
+        "confidence": "high"
+      }
+    ]
+  }
+}

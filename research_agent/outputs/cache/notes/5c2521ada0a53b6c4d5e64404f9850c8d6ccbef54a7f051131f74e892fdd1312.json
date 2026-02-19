@@ -1,0 +1,159 @@
+{
+  "cache_key": "notes::https://www.grammarly.com/blog/academic-writing/how-to-write-a-report/::gpt-5",
+  "value": {
+    "notes": [
+      {
+        "claim": "A report is a nonfiction document that organizes and summarizes facts on a specific topic to inform readers unfamiliar with the subject.",
+        "support": "“A report is a nonfiction document that organizes and summarizes facts on a specific topic, issue, or event, providing information for readers unfamiliar with the subject.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "The typical report structure includes an executive summary, introduction, body, and conclusion, often supplemented by a title page, table of contents, and references.",
+        "support": "“The structure of a report typically includes an executive summary, introduction, body, and conclusion, often supplemented by a title page, table of contents, and references.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Report formats include academic, business, and scientific, each tailored to specific purposes, audiences, and writing styles.",
+        "support": "“Different report formats include academic, business, and scientific reports, each tailored to specific purposes, audiences, and writing styles.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Key steps for writing a report include choosing a topic, conducting research, creating a thesis statement, preparing an outline, drafting, revising, and proofreading.",
+        "support": "“Key steps for writing a report involve choosing a topic, conducting research, creating a thesis statement, preparing an outline, drafting, revising, and proofreading.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Reports are organized for scanning with headings and subheadings and may include tables of contents; essays add the author’s opinions/arguments and are meant to be read start to finish.",
+        "support": "“Reports typically stick only to the facts… Moreover, reports are heavily organized, commonly with tables of contents and copious headings and subheadings… Conversely, essays are meant to be read from start to finish, not browsed for specific insights.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Academic reports test a student’s comprehension and include examples like book reports, reports on historical events, and biographies.",
+        "support": "“Academic report: Tests a student’s comprehension of the subject matter, such as book reports, reports on historical events, and biographies.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Business reports identify information useful in strategy, including marketing reports, internal memos, SWOT analyses, and feasibility reports.",
+        "support": "“Business reports: Identifies information useful in business strategy, such as marketing reports, internal memos, SWOT analysis, and feasibility reports.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Scientific reports share research findings, such as research papers and case studies, typically in science journals.",
+        "support": "“Scientific reports: Shares research findings, such as research papers and case studies, typically in science journals.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Reports can be formal or informal, short or long, internal or external; in business, vertical reports go up/down the hierarchy, while lateral reports target peers in other departments.",
+        "support": "“Reports can be further divided… formal or informal, short or long, and internal or external. In business, a vertical report shares information with people on different levels of the hierarchy… while a lateral report is for people on the author’s same level but in different departments.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "An executive summary is a standalone section, like an abstract, that summarizes report findings and is used primarily for official reports, less for school reports.",
+        "support": "“Executive summary: Like an abstract in an academic paper, an executive summary is a standalone section that summarizes the findings… Executive summaries are used primarily for official reports and less so for school reports.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "The introduction sets up the topic, includes the thesis statement, and provides necessary background before findings.",
+        "support": "“Introduction: The introduction sets up the body of the report and explains the overall topic… It includes your thesis statement and any need-to-know background information before you discuss your findings.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "The body contains the significant discoveries, organized with headings and subheadings, and makes up the majority of the report; the introduction and conclusion are usually only a few paragraphs each.",
+        "support": "“Body: The body of the report explains all your significant discoveries, broken up into headings and subheadings. The body makes up the majority of the report, whereas the introduction and conclusion are usually just a few paragraphs each.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "The conclusion synthesizes the report’s information into a definitive interpretation or judgment and is where authors often add their opinions or inferences.",
+        "support": "“Conclusion: In the conclusion, you bring together all the information in your report and come to a definitive interpretation or judgment. It’s also usually where the author adds their own opinions or inferences.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Reports often have additional requirements like title pages and tables of content beyond the basic structure.",
+        "support": "“Reports usually have unique additional requirements, such as title pages and tables of content.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "There are no firm requirements for what’s included in a report; organizations set their own formats. Writers should follow assignment-specific guidelines and required style guides/formatting.",
+        "support": "“There are no firm requirements for what’s included in a report. Every school, company, laboratory, task manager, and teacher can determine their format… As always, refer to the assignment for the specific guidelines… which style guides or formatting they require.”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Common inclusion requirements include a title page, table of contents, page numbering for longer reports, section headings/subheadings, citations following recommended guidelines, and a works cited page (bibliography).",
+        "support": "Listed items under ‘What should be included in a report?’: Title page; Table of contents; Page numbering “…when writing a longer report”; Headings and subheadings; Citations “…follow the recommended citation guidelines”; Works cited page “…A bibliography at the end of the report…”",
+        "tags": [
+          "architecture"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "When choosing a topic, ensure adequate available information (neither too general nor too specific), prefer topics you’re interested in, and keep assignment length requirements in mind.",
+        "support": "“Try to pick a topic that fits these two criteria: There’s adequate information: Choose a topic that’s neither too general nor too specific… You’re interested in it… Keep the assignment instructions, including length requirements, in mind as you decide.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "For research: business/scientific reports often use your own or company-provided research; academic reports are largely self-directed. Choose topics with sufficient available research and use reputable sources (official documents, other reports, research papers, case studies, respected books).",
+        "support": "“With business and scientific reports, the research is usually your own or provided by the company… For academic papers, you’re largely on your own… you won’t go far if the topic you picked doesn’t have enough available research. The key is to search only for reputable sources: official documents, other reports, research papers, case studies, books from respected authors, etc.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "high"
+      },
+      {
+        "claim": "Grammarly’s AI-powered report-writing tool can generate quality one-page business reports or executive summaries in a few quick steps.",
+        "support": "“Use your time more effectively with Grammarly’s AI-powered report-writing tool. Write quality one-page business reports or executive summaries in a few quick steps.”",
+        "tags": [
+          "other"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  }
+}

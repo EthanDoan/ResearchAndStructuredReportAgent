@@ -1,0 +1,46 @@
+{
+  "cache_key": "serper::iOS background execution and thermal throttling guidelines (BackgroundTasks, app life cycle) site:developer.apple.com::num=10",
+  "value": {
+    "searchParameters": {
+      "q": "iOS background execution and thermal throttling guidelines (BackgroundTasks, app life cycle) site:developer.apple.com",
+      "type": "search",
+      "num": 10,
+      "engine": "google"
+    },
+    "organic": [
+      {
+        "title": "Finish tasks in the background - WWDC25 - Videos - Apple Developer",
+        "link": "https://developer.apple.com/videos/play/wwdc2025/227/",
+        "snippet": "Discover background execution advancements and understand how the system schedules runtime. We'll discuss how to get the most out of background runtime to ...",
+        "date": "Jun 9, 2025",
+        "position": 1
+      },
+      {
+        "title": "Performance | Apple Developer Forums",
+        "link": "https://developer.apple.com/forums/tags/performance",
+        "snippet": "Game Mode optimizes your gaming experience by giving your game the highest priority access to your CPU and GPU, lowering usage for background tasks. And it ...",
+        "position": 2
+      },
+      {
+        "title": "Taking iPad Apps for Mac to the Next Level - WWDC19 - Videos",
+        "link": "https://developer.apple.com/videos/play/wwdc2019/235/",
+        "snippet": "Get an overview of APIs you can use and macOS design guidelines that need to be considered. Learn how the iPad app lifecycle comes across on the Mac, and get ...",
+        "date": "May 23, 2019",
+        "position": 3
+      },
+      {
+        "title": "Notifications | Apple Developer Forums",
+        "link": "https://developer.apple.com/forums/topics/app-and-system-services/app-and-system-services-notifications?page=2&sortBy=newest",
+        "snippet": "Questions for Apple Support App Lifecycle: When VoIP push is received and app is terminated, what is the exact lifecycle? Does app launch in background first, ...",
+        "position": 4
+      },
+      {
+        "title": "APNS | Apple Developer Forums",
+        "link": "https://developer.apple.com/forums/tags/apns?page=2&sortBy=newest",
+        "snippet": "Hello, I recently had an unusual experience, and I'm wondering if this is related to Apple's policies, so I wanted to ask.",
+        "position": 5
+      }
+    ],
+    "credits": 1
+  }
+}
