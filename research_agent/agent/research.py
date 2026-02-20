@@ -45,10 +45,19 @@ def search_serper(queries: List[str], max_sources: int, cache: CacheStore) -> Li
         cached = cache.get("serper", key)
         logger.info("Serper query: %s (%s)", q, "cache" if cached is not None else "live")
         if cached is None:
+            request_payload = {"q": q, "num": 10}
+            request_meta = {
+                "method": "POST",
+                "url": "https://google.serper.dev/search",
+                "headers": {"X-API-KEY": "***redacted***", "Content-Type": "application/json"},
+                "json": request_payload,
+                "timeout": 25,
+            }
+            logger.info("Serper request=%s", request_meta)
             resp = requests.post(
                 "https://google.serper.dev/search",
                 headers={"X-API-KEY": api_key, "Content-Type": "application/json"},
-                json={"q": q, "num": 10},
+                json=request_payload,
                 timeout=25,
             )
             resp.raise_for_status()
@@ -81,6 +90,13 @@ def fetch_sources(urls: List[str], cache: CacheStore) -> List[Source]:
             cached = cache.get("fetch", key)
             logger.info("Fetch source %s (%s)", url, "cache" if cached is not None else "live")
             if cached is None:
+                request_meta = {
+                    "method": "GET",
+                    "url": url,
+                    "headers": {"User-Agent": "Mozilla/5.0"},
+                    "timeout": 20,
+                }
+                logger.info("Fetch request=%s", request_meta)
                 r = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
                 r.raise_for_status()
                 html = r.text
@@ -117,7 +133,9 @@ def extract_notes(sources: List[Source], model: str, cache: CacheStore) -> List[
         cached = cache.get("notes", key)
         logger.info("Notes for %s (%s)", source.url, "cache" if cached is not None else "llm")
         if cached is None:
-            payload = llm_json(model=model, system=NOTES_SYSTEM, user=make_notes_user(source))
+            notes_user = make_notes_user(source)
+            logger.info("make_notes_user() output=%s", notes_user)
+            payload = llm_json(model=model, system=NOTES_SYSTEM, user=notes_user)
             cache.set("notes", key, payload)
         else:
             payload = cached
