@@ -7,9 +7,13 @@ from typing import List
 from dotenv import load_dotenv
 
 from .cache import CacheStore
+from .log import get_logger, setup_logging
 from .pdf_export import markdown_to_pdf
 from .research import extract_notes, fetch_sources, search_serper
 from .writer import build_plan, critic_report, write_report
+
+
+logger = get_logger(__name__)
 
 
 def parse_args():
@@ -48,7 +52,9 @@ def _queries_from_plan(plan: str) -> List[str]:
 
 def run() -> None:
     args = parse_args()
+    setup_logging()
     load_dotenv()
+    logger.info("Starting report run topic=%r model=%s search=%s", args.topic, args.model, args.search)
     if not os.getenv("OPENAI_API_KEY"):
         raise SystemExit("Missing OPENAI_API_KEY. Put it in .env or environment.")
     outdir = Path(args.outdir)
@@ -58,23 +64,28 @@ def run() -> None:
     manual_urls = [u.strip() for u in args.urls.split(",") if u.strip()]
 
     plan = build_plan(topic=args.topic, audience=args.audience, length=args.length, model=args.model, cache=cache)
+    logger.info("Plan ready")
 
     all_urls = list(manual_urls)
     if args.search:
         queries = _queries_from_plan(plan)
+        logger.info("Running search for %d query(s)", len(queries))
         found_urls = search_serper(queries=queries, max_sources=args.max_sources, cache=cache)
         for u in found_urls:
             if u not in all_urls:
                 all_urls.append(u)
 
     all_urls = all_urls[: args.max_sources]
+    logger.info("Collecting up to %d source(s), selected=%d", args.max_sources, len(all_urls))
     sources = fetch_sources(all_urls, cache=cache) if all_urls else []
     notes = extract_notes(sources=sources, model=args.model, cache=cache) if sources else []
+    logger.info("Prepared %d source(s) and %d note(s)", len(sources), len(notes))
 
     report_md = ""
     review = None
 
-    for _ in range(max(1, args.iterations)):
+    for iteration in range(max(1, args.iterations)):
+        logger.info("Writer/Critic iteration %d", iteration + 1)
         report_md = write_report(
             topic=args.topic,
             audience=args.audience,
@@ -91,8 +102,10 @@ def run() -> None:
             cache=cache,
         )
         if review.passed:
+            logger.info("Critic passed on iteration %d", iteration + 1)
             break
         if args.search and review.new_queries:
+            logger.info("Critic requested %d additional query(s)", len(review.new_queries))
             new_urls = search_serper(queries=review.new_queries, max_sources=args.max_sources, cache=cache)
             for u in new_urls:
                 if len(all_urls) >= args.max_sources:
@@ -101,11 +114,13 @@ def run() -> None:
                     all_urls.append(u)
             sources = fetch_sources(all_urls, cache=cache)
             notes = extract_notes(sources=sources, model=args.model, cache=cache)
+            logger.info("After enrichment: %d source(s), %d note(s)", len(sources), len(notes))
 
     md_path = outdir / "report.md"
     pdf_path = outdir / "report.pdf"
     md_path.write_text(report_md, encoding="utf-8")
     markdown_to_pdf(report_md, pdf_path)
+    logger.info("Wrote output files")
 
     print(f"✅ Wrote {md_path}")
     print(f"✅ Wrote {pdf_path}")

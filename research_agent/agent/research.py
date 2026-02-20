@@ -7,9 +7,13 @@ import requests
 from bs4 import BeautifulSoup
 
 from .cache import CacheStore
+from .log import get_logger
 from .llm import llm_json
 from .models import Note, Source
 from .prompts import NOTES_SYSTEM, make_notes_user
+
+
+logger = get_logger(__name__)
 
 
 def _slug_id(i: int) -> str:
@@ -34,9 +38,12 @@ def search_serper(queries: List[str], max_sources: int, cache: CacheStore) -> Li
     urls: List[str] = []
     seen = set()
 
+    logger.info("Searching with Serper across %d query(s)", len(queries))
+
     for q in queries:
         key = f"serper::{q}::num=10"
         cached = cache.get("serper", key)
+        logger.info("Serper query: %s (%s)", q, "cache" if cached is not None else "live")
         if cached is None:
             resp = requests.post(
                 "https://google.serper.dev/search",
@@ -66,10 +73,13 @@ def fetch_sources(urls: List[str], cache: CacheStore) -> List[Source]:
     sources: List[Source] = []
     now = dt.datetime.utcnow().isoformat() + "Z"
 
+    logger.info("Fetching %d URL(s)", len(urls))
+
     for idx, url in enumerate(urls, start=1):
         try:
             key = f"fetch::{url}"
             cached = cache.get("fetch", key)
+            logger.info("Fetch source %s (%s)", url, "cache" if cached is not None else "live")
             if cached is None:
                 r = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
                 r.raise_for_status()
@@ -86,6 +96,7 @@ def fetch_sources(urls: List[str], cache: CacheStore) -> List[Source]:
 
             sources.append(Source(source_id=_slug_id(idx), url=url, title=title, text=text, retrieved_at=now))
         except Exception as e:
+            logger.warning("Failed to fetch source %s: %s", url, e)
             sources.append(
                 Source(
                     source_id=_slug_id(idx),
@@ -100,9 +111,11 @@ def fetch_sources(urls: List[str], cache: CacheStore) -> List[Source]:
 
 def extract_notes(sources: List[Source], model: str, cache: CacheStore) -> List[Note]:
     notes: List[Note] = []
+    logger.info("Extracting notes from %d source(s)", len(sources))
     for source in sources:
         key = f"notes::{source.url}::{model}"
         cached = cache.get("notes", key)
+        logger.info("Notes for %s (%s)", source.url, "cache" if cached is not None else "llm")
         if cached is None:
             payload = llm_json(model=model, system=NOTES_SYSTEM, user=make_notes_user(source))
             cache.set("notes", key, payload)

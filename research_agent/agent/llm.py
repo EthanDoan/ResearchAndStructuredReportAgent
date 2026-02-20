@@ -1,7 +1,10 @@
 import json
 from openai import OpenAI
 
+from .log import get_logger
+
 _client = None
+logger = get_logger(__name__)
 
 
 def get_client() -> OpenAI:
@@ -13,6 +16,7 @@ def get_client() -> OpenAI:
 
 def llm_text(model: str, system: str, user: str) -> str:
     client = get_client()
+    logger.info("LLM text request model=%s", model)
     resp = client.responses.create(
         model=model,
         input=[
@@ -24,6 +28,7 @@ def llm_text(model: str, system: str, user: str) -> str:
 
 
 def llm_json(model: str, system: str, user: str) -> dict:
+    logger.info("LLM JSON request model=%s", model)
     text = llm_text(model=model, system=system, user=user)
     try:
         return json.loads(text)
