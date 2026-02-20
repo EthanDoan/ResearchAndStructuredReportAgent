@@ -20,7 +20,7 @@ Each note schema:
 }
 """
 
-WRITER_SYSTEM = """You write senior-level engineering design  docs in Markdown.
+WRITER_SYSTEM = """You write middle-level engineering design  docs in Markdown.
 Hard rules:
 - Use ONLY provided notes as factual grounding.
 - Do not use raw source text or outside knowledge.
