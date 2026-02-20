@@ -1,68 +1,32 @@
-# Research and Structured Report Agent
+# Research + Structured Report Agent (V2)
 
-## API key setup (safe)
-
-Do **not** commit real API keys to git (`.env`, `.env.example`, or source files).
-GitHub push protection will block commits containing live secrets.
-
-Use this pattern instead:
-
-1. Keep `.env` local-only (already ignored by `.gitignore`).
-2. Keep `research_agent/.env.example` with placeholders only.
-3. Inject `OPENAI_API_KEY` at runtime via environment variables in CI/CD or hosting platform secrets.
-
-Example local `.env` (not committed):
-
-```env
-OPENAI_API_KEY=your_real_key_here
-```
-
-Example committed `research_agent/.env.example`:
-
-```env
-OPENAI_API_KEY=your_openai_api_key_here
-```
-
-### Runtime injection options
-
-- **Shell/session**
-  - `export OPENAI_API_KEY=...`
-  - `python research_agent/main.py`
-- **GitHub Actions**
-  - Store key in repo/org secret `OPENAI_API_KEY`
-  - Pass as env in workflow job/step.
-- **Docker/Kubernetes**
-  - Use `--env OPENAI_API_KEY=...`, env files outside git, or Kubernetes Secrets.
-- **PaaS (Render/Railway/Fly/Heroku, etc.)**
-  - Add `OPENAI_API_KEY` in project Secret/Environment settings.
-
-## Secret already committed?
-
-If a real key was ever committed, do all of the following:
-
-1. Revoke/rotate the leaked key in OpenAI dashboard.
-2. Remove it from files and commit.
-3. Rewrite git history to purge it (for example with `git filter-repo` or BFG).
-4. Force-push cleaned history and ask collaborators to re-clone.
-
-## Sample usage
-
-Run the agent from the repository root:
+## Setup
 
 ```bash
-python research_agent/main.py
+cd research_agent
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
 ```
 
-When prompted, paste a request like this:
+Set:
+- `OPENAI_API_KEY`
+- `SERPER_API_KEY` (required when `--search` is used)
 
-```text
-Create a structured report on electric vehicle battery recycling in the EU. Include:
-- Current regulations and compliance requirements.
-- Top 5 recycling technologies and their trade-offs.
-- Key companies and recent funding trends (last 3 years).
-- Risks, open challenges, and recommendations for a startup entering this market.
+## CLI
 
-Use clear section headings and finish with a concise executive summary.
+```bash
+python main.py \
+  --topic "Agentic AI architecture for mobile apps" \
+  --audience "Senior iOS developers" \
+  --search \
+  --max-sources 8 \
+  --iterations 2 \
+  --outdir outputs
 ```
 
-The generated report content is saved under `research_agent/outputs/`.
+Outputs:
+- `outputs/report.md`
+- `outputs/report.pdf`
+- `outputs/cache/*` (unless `--no-cache`)
