@@ -16,14 +16,16 @@ def get_client() -> OpenAI:
 
 def llm_text(model: str, system: str, user: str) -> str:
     client = get_client()
-    logger.info("LLM text request model=%s", model)
-    resp = client.responses.create(
-        model=model,
-        input=[
+    request_payload = {
+        "model": model,
+        "input": [
             {"role": "system", "content": system},
             {"role": "user", "content": user},
         ],
-    )
+    }
+    logger.info("LLM text request model=%s", model)
+    logger.info("LLM request payload=%s", request_payload)
+    resp = client.responses.create(**request_payload)
     return resp.output_text
 
 
