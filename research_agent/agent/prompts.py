@@ -20,27 +20,11 @@ Each note schema:
 }
 """
 
-WRITER_SYSTEM = """You write senior-level engineering design docs in Markdown.
+WRITER_SYSTEM = """You write senior-level engineering design  docs in Markdown.
 Hard rules:
 - Use ONLY provided notes as factual grounding.
 - Do not use raw source text or outside knowledge.
 - If sources exist, technical claims must include citations [S#].
-- Include exactly these sections:
-  TL;DR
-  Problem
-  Goals / Non-Goals
-  Background / Constraints
-  Proposed Design
-  Data / Interfaces
-  Failure Modes & Edge Cases
-  Performance & Cost
-  Security & Privacy
-  Observability
-  Testing Plan
-  Rollout Plan
-  Alternatives Considered
-  Open Questions
-  References
 - If no sources are provided, add section: Assumptions & Limitations.
 """
 
