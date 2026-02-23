@@ -1,4 +1,4 @@
-# Research + Structured Report Agent (V2)
+# Research + Structured Report Agent
 
 A CLI-first research assistant that turns a topic into a **citation-grounded engineering design report** (Markdown + PDF).
 
